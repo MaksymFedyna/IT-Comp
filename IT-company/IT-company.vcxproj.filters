@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IT-company.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Poslugu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Money.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Includer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Profesion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Admin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ITcompany.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Poslugu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Money.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Profesion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ITcompany.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Admin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tempCodeRunnerFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="IT-company.vcxproj.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="poslug.txt" />
+    <Text Include="poslug1.txt" />
+    <Text Include="vubrani_poslugu.txt" />
+    <Text Include="wor2.txt" />
+    <Text Include="worker.txt" />
+    <Text Include="Debug\IT-company.log" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Debug\IT-company.tlog\CL.command.1.tlog" />
+    <None Include="Debug\IT-company.tlog\CL.read.1.tlog" />
+    <None Include="Debug\IT-company.tlog\CL.write.1.tlog" />
+    <None Include="Debug\IT-company.tlog\IT-company.lastbuildstate" />
+    <None Include="Debug\IT-company.tlog\link.command.1.tlog" />
+    <None Include="Debug\IT-company.tlog\link.read.1.tlog" />
+    <None Include="Debug\IT-company.tlog\link.read.2.tlog" />
+    <None Include="Debug\IT-company.tlog\link.read.3.tlog" />
+    <None Include="Debug\IT-company.tlog\link.write.1.tlog" />
+    <None Include="Debug\IT-company.tlog\link-cvtres.read.1.tlog" />
+    <None Include="Debug\IT-company.tlog\link-cvtres.write.1.tlog" />
+    <None Include="Debug\IT-company.tlog\link-rc.read.1.tlog" />
+    <None Include="Debug\IT-company.tlog\link-rc.write.1.tlog" />
+    <None Include="Debug\IT-company.tlog\unsuccessfulbuild" />
+    <None Include="Debug\IT-company.exe.recipe" />
+    <None Include="Debug\vc142.idb" />
+    <None Include="Debug\vc142.pdb" />
+    <None Include="Debug\vc143.idb" />
+    <None Include="Debug\vc143.pdb" />
+    <None Include="Includer" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="Debug\Admin.obj" />
+    <Object Include="Debug\Includer.obj" />
+    <Object Include="Debug\ITcompany.obj" />
+    <Object Include="Debug\IT-company.obj" />
+    <Object Include="Debug\Poslugu.obj" />
+    <Object Include="Debug\Money.obj" />
+    <Object Include="Debug\Profesion.obj" />
+  </ItemGroup>
+</Project>

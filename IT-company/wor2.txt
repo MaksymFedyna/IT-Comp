@@ -1,0 +1,148 @@
+maria	18	1000	1
+galy	18	199	2
+juy     19      1992    3
+tarer   17      1998    4
+erar    21      8444    5
+else
+		{
+			if (myworker[i].age == 0) {
+
+			}
+			else
+			{
+				cout << myworker[i].name << "\t" << myworker[i].age << "\t" << myworker[i].selery << "\t" << myworker[i].id << endl;
+			}
+			
+		}
+#include "Money.h"
+
+Money::Money()
+{
+}
+
+Money::Money(int selery):selery(selery)
+{
+}
+
+Money::~Money()
+{
+}
+
+void Money::oplatutu_poslugu()////////////////////////////////////// Оплата послуг
+{
+	wifstream in_sum;
+	int all_by = 0;
+	in_sum.open("vubrani_poslugu.txt");///////////////////////////// відкриття файлу
+	cout << "\nВибрані послуги:\n";
+	cout << "\nПрацівник\t\t" << "Послуга\t" << "\tЦіна" << "\tІД\n";
+	while (!in_sum.eof())//////////////////////////////////////////// Зчитування файлу
+	{
+		in_sum >> prof;
+		in_sum >> pos;
+		in_sum >> price1;
+		in_sum >> id_pokup;
+		if (in_sum.eof())
+			break;
+		wcout <<prof<<"\t"<< pos << "\t" << price1 << "\t" << id_pokup<<"\n";/////////////// вивід послуг і рахування всієї суми за послуги
+		all_by += price1;
+		
+	}
+	sum_to_poslug = all_by;
+	cout << "\n\nВибрані послуги обійдуться вам в " << all_by;
+	if (balance >= sum_to_poslug) {/////////////////////////////////////////////// Провірка на наявність грошей
+		cout << "\nХочете оплатити послуги зараз" << "\nТак - 1" << "\nНі  - 2\n";
+	}
+	else
+	{
+		cout << "\nСпочатку поповніть баланс";
+	}
+	int cho;
+	cin >> cho;
+	switch (cho)////////////////////////////////// Вибір оплати
+	{
+	case 1:
+	{
+		cout << "\n\nВи успішно оплатили послуги.\nДякуємо що скористалися нашими послугами.";
+		balance -= all_by;
+		cin.get();
+		break;
+	}
+	case 2:
+	{
+		break;
+	}
+	default:
+		break;
+	}
+}
+
+void Money::groshi()/////////////////////////////////////////////////////  Гаманець
+{
+	cout << "\nПереглянути баланс \t- 1" << "\nПоповнити баланс \t- 2\n";
+	int chose;
+	cin >> chose;
+	switch (chose)
+	{
+	case 1:
+	{
+		cout << "\nВаш баланс на даний  момент становить - " << balance;
+		cin.get();
+		break;
+	}
+	case 2: {
+		cout << "\nВведіть суму на яку хочете поповнити свій баланс - ";
+		int a;
+		cin >> a;
+		balance += a;
+		cin.get();
+		break;
+	}
+	default:
+		break;
+	}
+}
+
+void Money::bygalt()
+{
+	cout << "\nДохід перукарні - 1\n"<<"Вивести дохід \t- 2";
+	int a;
+	cin >> a;
+	switch (a)
+	{
+	case 1: {
+		cout << "\nЧистий дохід = " << (sum_to_poslug-(sum_to_poslug * 100)/80)*-1;
+		cin.get();
+		break;
+	}
+	case 2: {
+		cout << "\nВи можете вивести = " << sum_to_poslug - (sum_to_poslug * 100) / 80;
+		cout << "\nВведіть суму для виводу - ";
+		int a;
+		cin >> a;
+		cout << "\nВи вивели - " << a << "  Залишилося - " << sum_to_poslug - (sum_to_poslug * 100) / 80 - a;
+		cin.get();
+		break;
+	}
+	default:
+		break;
+	}
+}
+#pragma once
+#include "Header.h"
+class Money
+{
+public:
+	Money();
+	Money(int selery);
+	virtual~Money();
+	void oplatutu_poslugu();
+	void groshi();
+	void bygalt();
+
+
+protected:
+	int selery, sum_to_poslug; /////////// Головні змінні
+	wstring pos,prof; int price1, id_pokup;//// Змінні для зчитування з фала
+	int balance = 100;///////////////////////// Гроші на балансі
+};
+

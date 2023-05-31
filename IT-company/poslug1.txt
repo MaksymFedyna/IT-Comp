@@ -1,0 +1,6 @@
+Web-site	123000	1
+Game-dev	4320000	2
+Android-app	234000	3
+IOS-app___	683000	4
+serwer-provide	2450000	5
+Flatter-app	220000	6
